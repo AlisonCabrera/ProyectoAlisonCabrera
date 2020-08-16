@@ -39,7 +39,23 @@ app.get('/admisiones', (req, res) => {
     res.render('admisiones.ejs', {title: title} )
 })
 
+//ruta calentario
+app.get('/calendario', (req, res) => {
+    var title = app.get('appName')+" | Calendario"
+    res.render('calendario.ejs', {title: title} )
+})
 
+//ruta cct-noticia
+app.get('/cct-noticia', (req, res) => {
+    var title = app.get('appName')+" | cct-noticia"
+    res.render('cct-noticia.ejs', {title: title} )
+})
+
+//ruta formulario
+app.get('/Formulario', (req, res) => {
+    var title = app.get('appName')+" | Formulario"
+    res.render('Formulario.ejs', {title: title} )
+})
 
 //ruta para Centro de Estudiantes
 
